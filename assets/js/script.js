@@ -10,87 +10,87 @@ var quizBox = document.getElementById('quiz-box');
 
 let shuffledQuestions, currentQuestionIndex
 
-var questions = [
-    {q:"Commonly used data types Do Not include:", ans: ["1. Strings", "2. booleans", "3. alerts", "4. numbers"]},
-    {q:"The condition in an if/else statement is enclosed with <span>   </span>. ", ans: ["1. quotes", "2. curly brackets", "3. parenthesis", "4. square brackets"]},
-    {q:"Arrays in javascript can be used to store <span>   </span>.", ans: ["1. numbers and strings", "2. other arrays", "3. booleans", "4. all of the above"]},
-    {q:"String values must be enclosed within <span>   </span> when being assigned to variables.", ans: ["1. commas", "2. curly brackets", "3. quotes", "4. parenthesis"]},
-    {q:"A very useful tool used during development and debugging for printing content to the debugger is: ", ans: ["1. Javascript", "2. terminal/bash", "3. for loops", "4. console.log"]}
+// var questions = [
+//     {q:"Commonly used data types Do Not include:", ans: ["1. Strings", "2. booleans", "3. alerts", "4. numbers"]},
+//     {q:"The condition in an if/else statement is enclosed with <span>   </span>. ", ans: ["1. quotes", "2. curly brackets", "3. parenthesis", "4. square brackets"]},
+//     {q:"Arrays in javascript can be used to store <span>   </span>.", ans: ["1. numbers and strings", "2. other arrays", "3. booleans", "4. all of the above"]},
+//     {q:"String values must be enclosed within <span>   </span> when being assigned to variables.", ans: ["1. commas", "2. curly brackets", "3. quotes", "4. parenthesis"]},
+//     {q:"A very useful tool used during development and debugging for printing content to the debugger is: ", ans: ["1. Javascript", "2. terminal/bash", "3. for loops", "4. console.log"]}
 
-];
+// ];
 
-var correctAnswer = [
-    {q:0, a:"3. alerts"},
-    {q:1, a:"3. parenthesis"},
-    {q:2, a:"4. all of the above"},
-    {q:3, a:"3. quotes"},
-    {q:4, a:"4. console.log"}
+// var correctAnswer = [
+//     {q:0, a:"3. alerts"},
+//     {q:1, a:"3. parenthesis"},
+//     {q:2, a:"4. all of the above"},
+//     {q:3, a:"3. quotes"},
+//     {q:4, a:"4. console.log"}
 
-];
+// ];
 
 
-//Array of objects for question and answer
-var questions = [
-    {
-        question:"Commonly used datatypes do not include:",
-        answer: [
-            {"Strings", correct: false},
-            {"Booleans", correct: false}, 
-            {"Alerts", correct: true},
-            {"Numbers", correct: false}
-        ]
-    },
+// //Array of objects for question and answer
+// var questions = [
+//     {
+//         question:"Commonly used datatypes do not include:",
+//         answer: [
+//             {"Strings", correct: false},
+//             {"Booleans", correct: false}, 
+//             {"Alerts", correct: true},
+//             {"Numbers", correct: false}
+//         ]
+//     },
 
-    {
-        question:"The condition in an if/else statement is enclosed with... ", 
-        answer: [
-            {"Quotes", correct: false},
-            {"Curly brackets", correct: false},
-            {"Parenthesis", correct: true},
-            {"Square brackets", correct: false},
-        ]
-    },
+//     {
+//         question:"The condition in an if/else statement is enclosed with... ", 
+//         answer: [
+//             {"Quotes", correct: false},
+//             {"Curly brackets", correct: false},
+//             {"Parenthesis", correct: true},
+//             {"Square brackets", correct: false},
+//         ]
+//     },
 
-    {
-        question:"Arrays in javascript can be used to store...", 
-        answer: [
-            {"Numbers and strings", correct: false},
-            {"Other arrays", correct: false},
-            {"Booleans", correct: false},
-            {"All of the above", correct: true}
-        ]
-    },
+//     {
+//         question:"Arrays in javascript can be used to store...", 
+//         answer: [
+//             {"Numbers and strings", correct: false},
+//             {"Other arrays", correct: false},
+//             {"Booleans", correct: false},
+//             {"All of the above", correct: true}
+//         ]
+//     },
 
-    {
-        question:"String values must be enclosed within... when being assigned to variables.", 
-        answer: [
-            {"Commas", correct: false},
-            {"Curly brackets", correct: false},
-            {"Quotes", correct: true},
-            {"Parenthesis", correct: false}
-        ]
-    },
+//     {
+//         question:"String values must be enclosed within... when being assigned to variables.", 
+//         answer: [
+//             {"Commas", correct: false},
+//             {"Curly brackets", correct: false},
+//             {"Quotes", correct: true},
+//             {"Parenthesis", correct: false}
+//         ]
+//     },
 
-    {
-        question:"A very useful tool used during development and debugging for printing content to the debugger is: ", 
-        answer: [
-            {"Javascript", correct: false},
-            {"Terminal/bash", correct: false},
-            {"For loops", correct: false},
-            {"Console.log", correct: true}
-        ]
-    }
+//     {
+//         question:"A very useful tool used during development and debugging for printing content to the debugger is: ", 
+//         answer: [
+//             {"Javascript", correct: false},
+//             {"Terminal/bash", correct: false},
+//             {"For loops", correct: false},
+//             {"Console.log", correct: true}
+//         ]
+//     }
 
-];
+// ];
 
-var correctAnswer = [
-    {q:0, a:"3. alerts"},
-    {q:1, a:"3. parenthesis"},
-    {q:2, a:"4. all of the above"},
-    {q:3, a:"3. quotes"},
-    {q:4, a:"4. console.log"}
+// var correctAnswer = [
+//     {q:0, a:"3. alerts"},
+//     {q:1, a:"3. parenthesis"},
+//     {q:2, a:"4. all of the above"},
+//     {q:3, a:"3. quotes"},
+//     {q:4, a:"4. console.log"}
 
-];
+// ];
 
 //Star Quiz
 
