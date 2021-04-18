@@ -8,17 +8,48 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
-<header>
-    <h3>Time: <span id="countdown">60 seconds remaining</span></h3>
-</header>
 <body>
-    <div>
-        <h1 class="welcome">Coding Quiz Challenge</h1>
-        <p class="welcome">Try to answer the following code-related questions within the time limit. Keep in mind that incoorect answers will penalize your score/time by ten seconds!</p>
-        <div class="container">
-          <button id="start">Start Quiz</button>
+        
+    <div class="quiz">
+        <div class="welcome">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your time by ten seconds!</p>    
         </div>
-      </div>
+
+        <div>
+            <button id="start">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Box -->
+        <div id="quiz-box">
+
+            <header>
+                <h3>Time: <span id="countdown">60 seconds remaining</span></h3>
+            </header>
+
+            <section>
+                <div class="que-text">
+                    <span>Commonly used datatypes do not include:</span>
+                </div>
+
+                <div id="options">
+                    <div id="answer-buttons" class="btn-grid">
+                        <button class="btn">Strings</button>
+                        <button class="btn">Booleans</button>
+                        <button class="btn">Alerts</button>
+                        <button class="btn">Numbers</button>
+                    </div>
+                </div>
+
+              
+            </section>
+
+            <footer>
+                <span>Correct</span>
+            </footer>
+        </div>
+    </div>
+    
       <script src="./assets/js/script.js"></script>
   
 </body>

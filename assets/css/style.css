@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.quix-box header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+    height: 45px;
+    border: 1px solid #b8daff;
+    padding: 0 8px;
+    font-weight: bolder;   
+    color: black;
+}
+
+.quix-box footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+    height: 45px;
+    border: 1px solid #b8daff;
+    padding: 0 8px;
+    font-weight: bolder;   
+    color: black;
+}
+
+body {
+    background-color: #007bff; 
+    }
+
+
+.welcome {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.quiz {
+    
+    width: 100vw;
+    height: 100vh;    
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+#quiz-box {
+    
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;    
+    display: none;  
+}
+
+.que-text {
+    padding: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btn-grid {
+    display: grid;
+}
+
+.btn {
+    background-color: rgba(201, 238, 68, 0.774);
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin: 5px;
+}
+
+.btn:hover {
+    border-color: rgba(114, 114, 114, 0.103);
+    box-shadow: 0 0 1px 2px;
+}
+
+
+#start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#start:hover {
+    border-color: rgba(114, 114, 114, 0.103);
+    box-shadow: 0 0 1px 2px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}

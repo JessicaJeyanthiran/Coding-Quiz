@@ -1,5 +1,6 @@
 var timerEl = document.getElementById('countdown');
 var startBtn = document.getElementById('start');
+var quizBox = document.getElementById('quiz-box')
 
 
 // Timer that counts down from 60
@@ -23,4 +24,6 @@ function countdown() {
   }, 1000);
 }
 
-startBtn.onclick = countdown
+startBtn.onclick = () {
+    
+}
